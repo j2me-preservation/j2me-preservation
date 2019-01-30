@@ -1,0 +1,202 @@
+========================================================================
+RELEASE NOTES  26 June 2007
+
+               Series 40 5th Edition SDK
+               Based on Nokia 6267 device
+========================================================================
+
+This product includes software developed by the OpenSSL Project for 
+use in the OpenSSL Toolkit (http://www.OpenSSL.org/).
+
+For product support and the latest release notes, please visit
+Nokia's Developer Home at http://www.forum.nokia.com/ site.
+
+
+Product Description:
+====================
+The Series 40 5th Edition SDK is based on the Nokia 
+6267, which is a Series 40 platform 5th Edition 
+compatible phone. The SDK provides a development and/or testing
+environment for Java TM Platform, Micro Edition (Java ME) applications,
+MMS, SMS, WAP, and XHTML browser content, WAP Push (Service Indication) 
+messages and Digital Rights Management (DRM).
+
+Features:
+=========
+This version of the SDK supports the following Java Specification 
+Requests (JSRs): 
+- File Connection Optional Package API 1.0                  (JSR 75) 
+- Personal Information Mgmt Optional Package API 1.0        (JSR 75)
+- Java API for Bluetooth 1.1                                (JSR 82)
+- Java API BT Obex                                          (JSR 82)
+- Mobile Information Device Profile 2.1                     (JSR 118) 
+- Wireless Messaging SMS API 1.1                            (JSR 120)
+- Mobile Media API 1.1                                      (JSR 135)
+- Connected Limited Device Configuration 1.1                (JSR 139) 
+- Web Services JAXP, XML-RPC API 1.0                        (JSR 172)
+- APDU and CRYPTO of Security And Trust Services API 1.0    (JSR 177)
+- Mobile 3D Graphics API 1.1                                (JSR 184)
+- Java Technology for Wireless Industry 1.0                 (JSR 185)
+- Wireless Messaging API 2.0 for SMS and MMS                (JSR 205)
+- Scalable 2D Vector Graphics API 1.1                       (JSR 226)
+- Advanced Multimedia Supplements API 1.0                   (JSR 234)
+- Mobile Service Architecture Subset API 1.0                (JSR 248)
+- Nokia User Interface API 1.1
+
+The SDK features support for
+- A Macromedia Flash Lite 2.1 player. 
+- A TCP/IP protocol stack. 
+- Various Diagnostics features including on/off on-the-fly tracing,
+  a network traffic monitor and a MIDP memory monitor.
+
+The SDK replicates the UI of the Nokia 6267 handset, including the
+general look, key layout, key definitions, error messages, display and
+rendering, soft keys, and menu selection. The Nokia 6267 device has 
+keys on both sides that are made available to the user by emphasizing 
+them in the GUI.
+
+The SDK is shipped with Dutch, English, French, German, Italian,
+Portuguese, Spanish and Turkish language support as standard. To add 
+additional language support, you may install the World Languages 
+pack from the same web site from which you installed the SDK.
+
+The SDK allows MIDP tracing of many Java events. You can enable tracing 
+by using the SDK menu selection: Tools/Preferences/MIDP Monitor. 
+To capture the tracing information to a file, use the SDK command line 
+interface to start the SDK. For example:
+C:\Nokia\Devices\S40_5th_Edition_SDK\bin> emulator -Xnew >>tracelog.txt
+
+
+Tested IDEs:
+===============
+- Eclipse 3.2.2 with EclipseME 1.6.6 or higher
+- Sun NetBeans 5.5 with Mobility Pack 5.5
+- Nokia Mobile Internet Toolkit (NMIT) 4.1 with patch for JRE 5
+- Adobe GoLive CS2
+- MacroMedia Dreamweaver 8
+
+
+System Requirements:
+====================
+
+Supported Platforms:
+- Microsoft Windows XP Professional SP2
+- Microsoft Windows XP Professional SP2 Chinese
+- Microsoft Windows XP Home Edition SP2
+
+Additional requirement:
+- Java Runtime Environment 5 or later
+  (JRE 1.5 was used during the testing of this product)
+- Adobe Acrobat Reader 5.5 or higher
+
+Minimum hardware requirements:
+- Pentium-class computer with 667 MHz or faster CPU
+  256 MB RAM , 16-bit color, 1024x768 resolution
+  100MB of hard disk space
+  Network interface card
+
+Recommended hardware configuration:
+- Pentium-class computer with 2.8 GHz or faster CPU
+  512 MB RAM , 24-bit color, 1024x768 resolution
+  140MB of hard disk space
+  Sound card
+  Network interface card
+
+JSR177 developers need a smart card reader. Gemplus reader
+was used for testing.
+
+
+Disclaimer:
+===========
+- While the SDK contains the actual handset software functionality
+  is not identical due to simulations and differences in the
+  hardware. It is recommended to do final tests on actual handsets.
+
+- The PC rendering of colors in the SDK may not match colors seen on
+  the actual handset. However, the SDK is ideal for verifying pixel
+  location and the general appearance of the handset UI.
+
+- Sound simulation in the SDK does not accurately represent the handset.
+  This SDK is not recommended as a primary tool for development of sound.
+  However, it is ideal for verifying sound as part of application
+  testing.
+
+
+Compatibility Issues:
+=====================
+- The SDK may not work well with some sound card/driver combinations. 
+  In such cases, sound may be inaudible and MIDlets that use MMAPI
+  may fail. As a workaround try replacing the driver for the sound card.
+
+General Information:
+====================
+When using Java ME traces from the command line in tandem with the 
+instance reuse feature, traces that are implemented on a per-run time 
+basis are cumulative. For example, one run-time you choose to run 
+'emulator.exe –Xverbose:gc c:\mymidlet.jad', the midlet will be executed  
+in the running SDK instance with garbage collection traces turned on. 
+Running a second time, 'emulator.exe –Xverbose:class c:\mymidlet.jad', 
+will cause your midlet to load and run in the running instance with 
+both gc and class traces turned on. You can turn the traces off in the 
+SDK preferences GUI. Alternatively, you can restart the SDK. 
+
+If you use an upper case letter in the name of a Java MIDlet RMS file, 
+you will see that the name of the RMS file duplicated on your PC contains 
+a box in place of that character. This accurately duplicates the internal 
+file name coding of the handset. 
+
+Known Problems and Limitations:
+===============================
+
+1)The SDK supports T=0 smart card communication in JSR 177 SATSA-APDU.
+
+2)API (JSR 135) method GetKeyValue can be applied only on 3gpp, mp4, mp3 
+and 3gpp2 format.
+
+3)RTSP streaming in Mobile Media API (JSR 135) is not functional in 
+the SDK as a consequence one TCK case was excluded from JSR 135. This 
+issue will be corrected in the next SDK. You may use rtsp:// schema
+in URLs but the connection will not be completed.
+Seek and Skip are not functional in the SDK for video content types.
+Workaround: After writing the MIDLets using this API the user can test
+using the phone. Seek and Skip for video recording are not supported
+in the SDK.
+
+4)MP3 audio streaming embedded in FLashlite files will not be played
+in SDK, but plays fine on Phone.
+Issue: MP3 audio streaming embedded in FLashlite files is not
+supported in SDK.
+Workaround: Test using the phone for this media content for Flaslite,
+as the phone fully supports MP3 audio for Flashlite.
+
+5)The handset supports DRM2.0 but the SDK is limited to DRM1.0.
+
+6)The video playback has limitations. It does not play sound. Video recording
+is limited to taking snapshot.
+Blank screen may appear when changed to Full screen depending the video file size.
+Need to press navigation keys to start the video playback.
+Issue: Blank screen may appear when changed to Full screen
+depending the video file size.
+Workaround: Need to press navigation keys to start the video playback
+
+7) Korean and Japanese languages are not supported in SDK as part of FL
+localized features.
+No workaround Phone doesn't provide the language support.
+No use for the use developing and testing these languages.
+
+8) SDK package size is 46.8MB.
+This makes user to take more time to download the SDK from FN.
+Hence workaround is not required as this doesn't limits the user,
+but need to wait for more time comparatively.
+
+
+Copyright © 2007 Nokia Corporation. All rights reserved. 
+
+Nokia and Nokia Connecting People are registered trademarks of Nokia 
+Corporation. Other product and company names mentioned herein may be 
+trademarks or trade names of their respective owners.
+
+Feedback:
+=========
+Feedback, comments, suggestions about SDK to Nokia can be provided
+at www.forum.nokia
