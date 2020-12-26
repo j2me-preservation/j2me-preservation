@@ -12,6 +12,9 @@
 - https://github.com/nikita36078/phoneME-android
 - https://github.com/vadosnaprimer/pspme
 - https://github.com/minexew/freej2me-mascotcapsule
+- https://github.com/jbanes/midpath
+- https://github.com/ichisadashioko/midp-emulator
+- https://github.com/artem-frolov/microemu
 
 # Documentation
 
