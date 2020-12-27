@@ -18,6 +18,7 @@ Project|Platform(s)|VM|Derived from|Completeness/compatibility
 
 - https://github.com/PhoneJ2ME
 - https://github.com/minexew/freej2me-mascotcapsule
+- [phonetiq: Qt-based MIDlet manager for PhoneME (Java ME Virtual Machine)](https://github.com/Sektor/phonetiq)
 
 # Documentation
 
