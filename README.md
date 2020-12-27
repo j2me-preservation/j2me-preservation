@@ -14,6 +14,7 @@ Project|Platform(s)|VM|Derived from|Completeness/compatibility
 [midpath](https://github.com/jbanes/midpath)|RetroFW|?|?|?
 [js2me](https://github.com/szatkus/js2me)|?|Custom (JavaScript)|&ndash;|?
 [phonemefeaturedevices](https://github.com/hbao/phonemefeaturedevices)|Symbian, WinCE|phoneME CLDC|phoneME Feature|?
+[pluotsorbet](https://github.com/mozilla/pluotsorbet)|JavaScript|Custom (TypeScript)|phoneME|?
 
 # More emulation-related projects
 
