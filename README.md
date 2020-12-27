@@ -3,6 +3,7 @@
 Project|Platform(s)|VM|Derived from|Completeness/compatibility
 -|-|-|-|-
 [J2ME-Loader](https://github.com/nikita36078/J2ME-Loader)|Android|Host JVM|&ndash;|?
+[JL-Mod](https://github.com/woesss/JL-Mod)|Android|Host JVM|J2ME-Loader|like J2ME-Loader + MascotCapsule Micro3D
 [freej2me](https://github.com/hex007/freej2me)|Cross-platform (SDL, libretro)|Host JVM ?|?|?
 [SquirrelJME](https://github.com/SquirrelJME/SquirrelJME)|Cross-platform (Java)|Custom (Java)|&ndash;|?
 [pspkvm](https://github.com/vadosnaprimer/pspkvm)|PlayStation Portable|phoneME CLDC|phoneME Feature [unk.ver.](https://github.com/vadosnaprimer/pspkvm/commit/ead774969040d7e93df4f42f3ae0abccd7950707)|?
