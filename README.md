@@ -12,6 +12,7 @@ Project|Platform(s)|VM|Derived from|Completeness/compatibility
 [midp-emulator](https://github.com/ichisadashioko/midp-emulator)|?|?|?|?
 [midpath](https://github.com/jbanes/midpath)|RetroFW|?|?|?
 [js2me](https://github.com/szatkus/js2me)|?|Custom (JavaScript)|&ndash;|?
+[phonemefeaturedevices](https://github.com/hbao/phonemefeaturedevices)|Symbian, WinCE|phoneME CLDC|phoneME Feature|?
 
 # More emulation-related projects
 
