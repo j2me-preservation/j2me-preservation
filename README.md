@@ -24,7 +24,7 @@ Project|Platform(s)|VM|Derived from|Completeness/compatibility
 
 # Documentation
 
-- https://github.com/nikita36078/J2ME_Docs
+- [J2ME_Docs: A collection of the J2ME-related documentation](https://nikita36078.github.io/J2ME_Docs/)
 - https://phonej2me.github.io/
 - https://github.com/j2me-preservation/MascotCapsule
 - https://github.com/j2me-preservation/M3G
